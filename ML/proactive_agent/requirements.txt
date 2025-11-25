@@ -1,0 +1,38 @@
+# Flask and Web Server
+Flask==3.0.0
+flask-cors==4.0.0
+gunicorn==21.2.0
+
+# Firebase
+firebase-admin==6.3.0
+
+# Google APIs
+google-api-python-client==2.108.0
+google-generativeai==0.3.2
+
+# Pinecone
+# Use a released version that is available on PyPI
+pinecone-client==3.2.2
+
+# NLP and Transformers for Legal NER
+transformers==4.36.0
+# Use a torch release available on PyPI for this Python version
+torch==2.2.0
+sentencepiece==0.1.99
+
+# PDF Processing
+PyPDF2==3.0.1
+
+# Text Processing
+# loosen langchain pin so the resolver can pick a compatible version
+langchain
+langchain-text-splitters==0.0.1
+
+# Environment and Configuration
+python-dotenv==1.0.0
+
+# Logging and Monitoring
+python-json-logger==2.0.7
+
+# Utilities
+requests==2.31.0
