@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "function": "app"    // Redirect API calls to Firebase Function named "app"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"    // Frontend React app
+      }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+  
+}
